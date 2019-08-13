@@ -61,7 +61,7 @@ From your current working director, the path to this `1-Intro-Command-Line.md` f
 
 The relative path to the another HackforLa project folder on my computer is:
 
-`../hackforla/spare`
+`../ice-crea-shop`
 
 
 ## Basic Commands
@@ -113,7 +113,7 @@ The relative path to the another HackforLa project folder on my computer is:
 * **Note**: The `-r` option means **r**ecursive.  It's often needed for operations on a folder.
 
 ##### `mv`
-* `mv <current file location> <new file location>` will **m**o**v**e a file from its `<current file location>` to a `<new file location>`.
+* `mv <current file location> <new file location>` will **m**o**v**e a file from its `<current file location>` to a `<new file location>`. Don't forget the `/` if the `<new file location>` is a folder.
 * This is the same as dragging and dropping a file from one place to another.
 * `mv <current file name> <new file name>` renames a file by moving it.  You "move" it from one location, `<current file name>`, to another location, `<new file name>`, though it doesn't actually move locations.
 
@@ -121,11 +121,18 @@ The relative path to the another HackforLa project folder on my computer is:
 * `cp <current file location> <new file location>` will **c**o**p**y a file from its `<current file location>` to a `<new file location>`, leaving the original file untouched.  
 * This is different from `mv` in that you are creating a new file and putting it somewhere rather than just moving the current file.
 
-##### `zip`/`unzip`
+##### `zip`/`unzip` (Mac Users)
 * `zip <zipped file> <original file>` will zip/compress the `<original file>` into a `<zipped file>`.
 * `zip -r <zipped file> <original folder>` will zip/compress the `<original folder>` and all of its files into a `<zipped file>`.
 * **Note**:  A list of files and folders, separated by spaces, can be zipped into one zipped file with `zip -r <zipped file> <original file 1> <original folder 2> ...`.
 * `unzip <file>` will unzip/uncompress a file.
+
+##### `gzip`/`gunzip` (Windows Users)
+* `gzip <filename>` will compress the `<filename>` into `<filename>.gz`
+* `gzip -r <original folder>` will compress all of the individual files of original folder
+* `gunzip <filename>.gz` will uncompress the zipped file
+
+
 
 ## Exercise
 * Create an empty directory called `test`.
@@ -134,12 +141,12 @@ The relative path to the another HackforLa project folder on my computer is:
 * Remove *one* of the previously created files.
 * Go up one directory and remove the `test` directory with the empty files in it.  **NOTE**:  Be careful and make sure you are removing the correct files!
 * Create an empty file called `test.txt`.  
-* Change the name to `civic_hacking_is_cool.txt`.
+* Change the name to `opensource_is_cool.txt`.
 * Create an empty file called `my_secrets.txt`.
 * Create a new directory called `my_diary`.  
 * Move the two previously created files into this directory.
-* Create a new directory called `my_blog`.  Copy the file `civic_hacking_is_cool.txt` from `my_diary` to `my_blog`.
-* Examine the files in `my_blog` to confirm that `civic_hacking_is_cool.txt` is there.
+* Create a new directory called `my_blog`.  Copy the file `opensource_is_cool.txt` from `my_diary` to `my_blog`.
+* Examine the files in `my_blog` to confirm that `opensource_is_cool.txt` is there.
 * Zip the folders `my_diary` and `my_blog` into a new file called `writings.zip`.
 * Delete the folders `my_diary` and `my_blog`.
 * Unzip `writings.zip` to get your folders back.
